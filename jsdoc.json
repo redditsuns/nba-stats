@@ -1,0 +1,24 @@
+{
+  "source": {
+    "include": ["bin", "src"],
+    "includePattern": ".mjs$",
+    "excludePattern": "(node_modules/|docs)"
+  },
+  "opts": {
+    "destination": "docs",
+    "readme": "./docs/README.md",
+    "recurse": true,
+    "template": "./node_modules/clean-jsdoc-theme",
+    "theme_opts": {
+      "theme": "dark",
+      "title": "NBA Statistics"
+    }
+  },
+  "plugins": [
+    "plugins/markdown"
+  ],
+  "templates": {
+    "cleverLinks": true,
+    "monospaceLinks": true
+  }
+}
