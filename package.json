@@ -1,5 +1,5 @@
 {
-  "name": "nba-stats",
+  "name": "@redditsuns/nba-stats",
   "version": "1.0.0",
   "description": "API wrapper for NBA Stats for Node.js.",
   "main": "bin/index.mjs",
