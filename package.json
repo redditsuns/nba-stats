@@ -1,6 +1,6 @@
 {
   "name": "@redditsuns/nba-stats",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "API wrapper for NBA Stats for Node.js.",
   "main": "bin/index.mjs",
   "type": "module",
@@ -21,6 +21,9 @@
     "type": "git",
     "url": "git+https://github.com/redditsuns/nba-stats.git"
   },
+  "publishConfig": {
+		"registry": "https://npm.pkg.github.com/"
+	},
   "keywords": [
     "nba",
     "stats",
