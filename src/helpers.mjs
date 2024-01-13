@@ -1,5 +1,5 @@
 import { default as defaults } from '../data/defaults.json' assert { type: 'json' };
-import { default as stat_endpoints } from '../data/endpoints.json' assert { type: 'json' };
+import { default as endpoints } from '../data/endpoints.json' assert { type: 'json' };
 import { default as headers } from '../data/headers.json' assert { type: 'json' };
 
 const formatFetchResponse = (json, options) => {
@@ -47,7 +47,7 @@ const formatFetchResponse = (json, options) => {
 };
 
 const getUrl = (params, endpoint) => {
-  const { params: endpointParams, url: endpointUrl } = stat_endpoints[endpoint];
+  const { params: endpointParams, url: endpointUrl } = endpoints[endpoint];
   const values = { ...endpointParams, ...params };
   const paramNames = Object.keys(values);
   const queryString = paramNames
@@ -56,8 +56,7 @@ const getUrl = (params, endpoint) => {
   return `${endpointUrl}?${queryString}`;
 };
 
-export const createEndpoint = (endpoint) => (params, options) =>
-  getNbaData(params, endpoint, { ...defaults, ...options });
+export const createEndpoint = (endpoint) => (params, options) => getNbaData(params, endpoint, { ...defaults, ...options });
 
 export async function getNbaData(params, endpoint, options) {
   const url = getUrl(params, endpoint);

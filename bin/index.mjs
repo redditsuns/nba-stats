@@ -4,6 +4,7 @@ const exported = {};
 
 const endpoints = [
   'allPlayersList',
+  'allTimeLeaders',
   'boxScoreAdvanced',
   'boxScoreDefense',
   'boxScoreFourFactors',
@@ -24,11 +25,11 @@ const endpoints = [
   'franchiseHistory',
   'franchiseLeaders',
   'franchiseLeadersRank',
-  'getPBPVideoURL',
-  'getPlayerHeadshotURL',
-  'getPlayerID',
-  'getTeamID',
-  'getTeamLogoURLs',
+  // 'getPBPVideoURL',
+  // 'getPlayerHeadshotURL',
+  // 'getPlayerID',
+  // 'getTeamID',
+  // 'getTeamLogoURLs',
   'infographicFanduelPlayer',
   'leagueGameFinder',
   'leagueLeaders',
@@ -42,6 +43,7 @@ const endpoints = [
   'leaguePlayerShootingDefense',
   'leaguePlayerShotLocationDefense',
   'leaguePlayerShotLocations',
+  'leaguePlayerTrackingShooting',
   'leaguePlayerTrackingStats',
   'leagueStandings',
   'leagueTeamClutchStats',
@@ -49,6 +51,7 @@ const endpoints = [
   'leagueTeamEstimatedAdvancedStats',
   'leagueTeamGeneralStats',
   'leagueTeamHustleStats',
+  'leagueTeamOpponentShooting',
   'leagueTeamShootingStats',
   'leagueTeamTrackingShots',
   'playByPlay',
@@ -62,7 +65,7 @@ const endpoints = [
   'playerSplitsByYear',
   'playerTrackingDefense',
   'playerTrackingPasses',
-  'playerTrackingReb',
+  'playerTrackingRebounds',
   'playerTrackingShooting',
   'schedule',
   'scoreboard',
@@ -84,14 +87,16 @@ const endpoints = [
   'teamRoster',
   'teamShootingSplits',
   'teamTrackingPasses',
-  'teamTrackingReb',
+  'teamTrackingRebound',
   'teamTrackingShots',
   'teamYearByYearStats',
   'teamYearSplits',
   'transactions',
-  'winProbability'
+  'winProbability',
 ];
 
-endpoints.forEach((endpoint) => { exported[createEndpoint(endpoint)] = createEndpoint(endpoint); });
+endpoints.forEach((endpoint) => {
+  exported[createEndpoint(endpoint)] = createEndpoint(endpoint);
+});
 
 export default exported;
