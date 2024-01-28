@@ -19,7 +19,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/redditsuns/nba-stats.git"
+    "url": "git+https://github.com/sunsreddit/nba-stats.git"
   },
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/"
@@ -33,9 +33,9 @@
   "author": "bruxc <bruxc@sunsreddit.net>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/redditsuns/nba-stats/issues"
+    "url": "https://github.com/sunsreddit/nba-stats/issues"
   },
-  "homepage": "https://github.com/redditsuns/nba-stats#readme",
+  "homepage": "https://github.com/sunsreddit/nba-stats#readme",
   "devDependencies": {
     "@jest/globals": "^29.7.0",
     "@typescript-eslint/parser": "^6.18.1",
