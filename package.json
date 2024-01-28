@@ -1,5 +1,5 @@
 {
-  "name": "@redditsuns/nba-stats",
+  "name": "@sunsreddit/nba-stats",
   "version": "1.0.0",
   "description": "API wrapper for NBA Stats for Node.js.",
   "main": "bin/index.mjs",
@@ -14,16 +14,20 @@
   "scripts": {
     "docs": "npx jsdoc -c jsdoc.json",
     "lint": "npx eslint .",
+    "package": "sh ./scripts/npm_publish.sh",
+    "package:patch": "npm run package patch",
+    "package:minor": "npm run package minor",
+    "package:major": "npm run package major",
     "start": "node .",
     "test": "cross-env NODE_OPTIONS=--experimental-vm-modules npx jest --coverage --config jest.config.mjs"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/redditsuns/nba-stats.git"
+    "url": "git+https://github.com/sunsreddit/nba-stats.git"
   },
   "publishConfig": {
-		"registry": "https://npm.pkg.github.com/"
-	},
+    "registry": "https://npm.pkg.github.com/"
+  },
   "keywords": [
     "nba",
     "stats",
@@ -33,9 +37,9 @@
   "author": "bruxc <bruxc@sunsreddit.net>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/redditsuns/nba-stats/issues"
+    "url": "https://github.com/sunsreddit/nba-stats/issues"
   },
-  "homepage": "https://github.com/redditsuns/nba-stats#readme",
+  "homepage": "https://github.com/sunsreddit/nba-stats#readme",
   "devDependencies": {
     "@jest/globals": "^29.7.0",
     "@typescript-eslint/parser": "^6.18.1",

@@ -1,21 +1,21 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <a href="https://github.com/redditsuns/nba-stats/">
+  <a href="https://github.com/sunsreddit/nba-stats/">
     <img src="docs/images/nba.svg" alt="Logo" width="235" height="177">
   </a>
   <h3 align="center">🏀 NBA Statistics API Wrapper 📊</h3>
   <p align="center">
     An API wrapper for NBA statistics for Node.js users!
     <br />
-    <a href="https://github.com/redditsuns/nba-stats"><strong>Explore the docs »</strong></a>
+    <a href="https://github.com/sunsreddit/nba-stats"><strong>Explore the docs »</strong></a>
     <br />
     <br />
     <a href="https://agile.sunsreddit.net/projects/suns-sidebar-project/">View Project</a>
     ·
-    <a href="https://github.com/redditsuns/nba-stats/issues">Report Bug</a>
+    <a href="https://github.com/sunsreddit/nba-stats/issues">Report Bug</a>
     ·
-    <a href="https://github.com/redditsuns/nba-stats/issues">Request Feature</a>
+    <a href="https://github.com/sunsreddit/nba-stats/issues">Request Feature</a>
   </p>
 </div>
 
