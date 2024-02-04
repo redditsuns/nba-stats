@@ -26,7 +26,7 @@
     "url": "git+https://github.com/sunsreddit/nba-stats.git"
   },
   "publishConfig": {
-    "registry": "https://npm.pkg.github.com/"
+    "@sunsreddit:registry": "https://npm.pkg.github.com/"
   },
   "keywords": [
     "nba",
