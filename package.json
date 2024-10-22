@@ -1,6 +1,6 @@
 {
   "name": "@sunsreddit/nba-stats",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "API wrapper for NBA Stats for Node.js.",
   "main": "bin/index.mjs",
   "type": "module",
