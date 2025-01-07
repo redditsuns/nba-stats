@@ -1,7 +1,7 @@
 import {DOMParser} from 'xmldom';
 import axios from 'axios'; 
-import { default as stat_endpoints } from '../data/endpoints.json' assert { type: 'json' };
-import { default as players } from '../data/players.json' assert { type: 'json' }; 
+import { default as stat_endpoints } from '../data/endpoints.json' with { type: 'json' };
+import { default as players } from '../data/players.json' with { type: 'json' }; 
 import jsonp from 'jsonp';
 
 const default_options = { formatted: true, parameters: false };
